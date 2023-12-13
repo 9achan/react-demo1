@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* 變數(定義變數的語法) */
+/* :root {
+	灰階
+	--light
+	--grey
+	--deep
+	主色調
+	--major_color
+	--major_color2
+	--major_color3
+	輔助色調
+	--lesser-color
+} */
+
+/* 以上:網頁常用設定(通常一開始建立檔案時就會寫) */
+
+.container {
+    width: 1200px;  /* width搭配margin讓網頁置中是常用的做法 */
+    margin: 0 auto;
+    display: flex;  /* 彈性區塊 */
+}
+
+
+/* 左欄區 */
+.header {
+    width: 260px;
+    padding: 20px;
+    background-image: url("./felxbox-2ex/img/left_bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #767d64;
+}
+.header ul {
+    padding: 30px;
+}
+.header li{list-style: none;}  /* li不要前面的點 */
+.header li a{
+    display: block;  /* 轉換成區塊元素(因為超連結是行內元素 沒有寬高範圍，而寬高範圍是內容撐開的，若要控制寬高範圍，則需轉換成區塊元素) */
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+    text-align: center;
+    line-height: 80px; /* 行高 */
+}
+
+/* 右欄區 */
+.container2 img{
+    display: block;
+    width: 100%;
+}
+
+.content {
+    background-color: #cfd7b9;
+    width: 900px;
+    padding: 20px 40px;
+}
+.content h3{
+    font-size: 32px;
+    color: #5a5f4e;
+    text-align: center;
+    margin: 20px 0;  /* 上下20px 左右不動(0) */
+}
+
+.content p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+    justify-content: space-between;  /* 平均分配 */
+}
+.info .box{
+    width: 220px;
+    padding: 40px 20px;
+}
+.info .b1{background-color: #fed0cd;}
+.info .b2{background-color: #fff3a8;}
+.info .b3{background-color: #c1eab3;}
+.info .box h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.info .box a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #35382f;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer{
+    background-color: #4b4f41;
+    color: #989e88;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.footer h2{
+    margin-bottom: 10px;
+}
